@@ -2,7 +2,7 @@
     position: absolute;
     top: 70px;
     right: 0;
-    background-color: white;
+    background-color: var(--orange-jaune);
     display: flex;
     flex-direction: column;
     opacity: 0;

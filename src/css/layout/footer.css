@@ -1,0 +1,23 @@
+.footer {
+    background: var(--gris) url("assets\icone\Logo.svg") no-repeat center center;
+    background-size: cover;
+    padding: 5px 0px;
+    color: var(--noir);
+}
+
+.footer_ensemble {
+    display: flex;
+    justify-content: space-between; /* un à gauche, un à droite */
+    align-items: center; /* alignement vertical */
+}
+
+.footer_nav {
+    padding-left: 30px;
+}
+
+.footer_rs{
+    padding-right: 30px;
+    bottom: 0;
+    z-index: 5;
+}
+
