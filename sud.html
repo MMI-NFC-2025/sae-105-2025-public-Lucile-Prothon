@@ -1,31 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les rives du territoires </title>
     <link rel="icon" type="image/svg+xml" href="assets/icone/favicon.svg">
-    <link rel="stylesheet" href="/src/css/style.css"/>
+    <link rel="stylesheet" href="src/css/style.css" />
     <script type="module" src="src/js/script.js"></script>
 </head>
 
 <body>
-    <header>
-        <a href="index.html"> <img src="assets/icone/Logo.svg"></a>
-        <button>
-            <img src="assets/icone/Menu.svg"></a>
-        </button>
-        <a href="recherche.html"><img src="assets/icone/Recherche.svg"></a>
-
-        <nav>
-            <ul>
-                <li><a href="festival.html">Le festival</a></li>
-                <li><a href="programme.html">Le programme</a></li>
-                <li><a href="artistes.html">Les artistes</a></li>
-                <li><a href="scene.html">Les scènes</a></li>
-                <li><a href="info.html">Les infos pratiques</a></li>
-            </ul>
+    <header class="Header_container"> <a href="index.html"> <img src="assets/icone/Logo.svg"> </a>
+        <div class="header__end"> <a href="recherche.html"><img src="assets/icone/Recherche.svg"></a> <button
+                class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"> <img
+                    src="assets/icone/Menu.svg"> </button>
+            <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"> <a class="menu__link" href="festival.html">Le festival</a> </li>
+                    <li class="menu__item"> <a class="menu__link" href="programme.html">Le programme</a> </li>
+                    <li class="menu__item"> <a class="menu__link" href="artistes.html">Les artistes</a> </li>
+                    <li class="menu__item"> <a class="menu__link" href="scene.html">Les scènes</a> </li>
+                    <li class="menu__item"> <a class="menu__link" href="info.html">Les infos pratiques</a> </li>
+                </ul>
+        </div>
+        <img src="assets/icone/Recherche.svg">
     </header>
 
     <main> 

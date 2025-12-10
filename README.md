@@ -3,9 +3,9 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
+- NOM : Prothon
+- PRÉNOM : Lucile
+- GROUPE : C2
 - URL du site :
 - URL FIGMA :
 
