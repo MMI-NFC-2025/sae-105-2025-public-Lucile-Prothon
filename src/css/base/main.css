@@ -6,10 +6,14 @@ box-sizing: border-box;
 
 body {
 background-color: var(--beige);
+min-height: 100vh;
+display: flex;
+flex-direction: column;
 }
 
-main {
+.main {
 flex: 1;/* pousse le footer vers le bas si contenu trop petit */
+padding: 0 20px;
 }
 
 
@@ -30,7 +34,7 @@ font-family: var(--body);
 font-size: var(--semi-text) ;
 }
 
-.actualité /*Créer les blocs*/
+.news /*Créer les blocs*/
 {
 }
 

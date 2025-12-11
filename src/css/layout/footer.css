@@ -22,6 +22,10 @@
     bottom: 0px;
 }
 
+.footer_rs img {
+margin-left: 10px;
+}
+
 /*Enlever le soulignement*/
 .footer a {
     text-decoration: none;

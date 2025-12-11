@@ -12,24 +12,24 @@
 
 /* fnt-size */
     --body-2-t: 0.75rem;
-    --body: 0.875rem;
-    --semi-text: 1rem;
+    --body-t: 0.875rem;
+    --semi-text-t: 1rem;
     --nom-festival-t: 1.25rem;
     --nom-festival-2: 1.5rem;
-    --slogan: 2rem;
+    --slogan-t: 2rem;
     --text-med: 2rem;
     --gros: 2.25rem;
     --text-big: 2.5rem;
 
 
-    /* font-name */
-        --body: 'Inter';
-        --body-2: 'Inter';
-        --header-1: 'Blaka Hollow';
-        --header-2: 'Jacques Francois Shadow';
-        --nom-festival: 'Orbitron';
-        --semi-text: 'Inter';
-        --slogan: 'Bebas Neue';
-        --sm-uppercase : 'Montserrat'
+/* font-name */
+    --body: 'Inter';
+    --body-2: 'Inter';
+    --header-1: 'Blaka Hollow';
+    --header-2: 'Jacques Francois Shadow';
+    --nom-festival: 'Orbitron';
+    --semi-text: 'Inter';
+    --slogan: 'Bebas Neue';
+    --sm-uppercase : 'Montserrat'
 }
 
