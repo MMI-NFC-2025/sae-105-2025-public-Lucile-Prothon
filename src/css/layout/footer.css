@@ -13,11 +13,18 @@
 
 .footer_nav {
     padding-left: 30px;
+    font-family: var(--sm-uppercase);
 }
 
 .footer_rs{
+    font-family: var(--sm-uppercase);
     padding-right: 30px;
-    bottom: 0;
-    z-index: 5;
+    bottom: 0px;
+}
+
+/*Enlever le soulignement*/
+.footer a {
+    text-decoration: none;
+    color: inherit;
 }
 

@@ -8,3 +8,8 @@ body {
     background-color: var(--beige);
     /* color: rgb(0, 0, 0); */
 }
+
+main {
+    flex: 1;
+    /* pousse le footer vers le bas si contenu trop petit */
+}
