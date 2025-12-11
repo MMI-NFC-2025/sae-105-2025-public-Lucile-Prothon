@@ -9,23 +9,20 @@
     --vert: #4dc95b;
     --violet: #b151ff;
     --gris: #747474;
-}
 
 /* fnt-size */
-    :root {
-        /* number */
-        --body: 0.875rem;
-        --body-2: 1rem;
-        --semi-text: 1rem;
-        --nom-festival: 1.25rem;
-        --slogan: 2rem;
-        --text-med: 2rem;
-        --text-big: 3rem;
-    }
+    --body-2-t: 0.75rem;
+    --body: 0.875rem;
+    --semi-text: 1rem;
+    --nom-festival-t: 1.25rem;
+    --nom-festival-2: 1.5rem;
+    --slogan: 2rem;
+    --text-med: 2rem;
+    --gros: 2.25rem;
+    --text-big: 2.5rem;
+
 
     /* font-name */
-    :root {
-        /* string */
         --body: 'Inter';
         --body-2: 'Inter';
         --header-1: 'Blaka Hollow';
@@ -34,5 +31,5 @@
         --semi-text: 'Inter';
         --slogan: 'Bebas Neue';
         --sm-uppercase : 'Montserrat'
-    }
+}
 

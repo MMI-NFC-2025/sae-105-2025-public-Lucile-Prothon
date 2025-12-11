@@ -1,15 +1,75 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+box-sizing: border-box;
 }
 
 body {
-    background-color: var(--beige);
-    /* color: rgb(0, 0, 0); */
+background-color: var(--beige);
 }
 
 main {
-    flex: 1;
-    /* pousse le footer vers le bas si contenu trop petit */
+flex: 1;/* pousse le footer vers le bas si contenu trop petit */
 }
+
+
+.slogan{
+font-family: var(--slogan);
+font-size: var(--slogan-t);
+color : var(--violet);
+}
+
+.titre{
+font-family: var(--header-1);
+font-size: var(--text-big) ;
+font-weight: 600;
+}
+
+.billetterie{
+font-family: var(--body);
+font-size: var(--semi-text) ;
+}
+
+.actualité /*Créer les blocs*/
+{
+}
+
+.bouton /*Créer la mise en page*/{
+
+}
+
+.bouton_texte{
+font-family: var(--body-2);
+font-size: var(--body);
+}
+
+.plus_info{
+font-family: var(--body-2);
+font-size: var(--body-2-t);
+font-weight: 600;
+}
+
+.sous_titre{
+font-family: var(--header-2);
+font-size: var(--gros);
+}
+
+
+
+.main a {
+    text-decoration: none; /*Enlever le soulignement*/
+    color: inherit; /*Enlever le soulignement*/
+}
+
+button,
+input,
+select,
+textarea {
+    appearance: none;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+}
+

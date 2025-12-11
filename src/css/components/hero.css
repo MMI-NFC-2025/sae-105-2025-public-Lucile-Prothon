@@ -1,0 +1,42 @@
+.hero {
+    position: relative; /* Important : crée un contexte pour l'absolute */
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*Spécifique page d'accueil*/
+.nom_du_festival_gras {
+    font-family: var(--nom-festival);
+    font-size: var(--nom-festival-2);
+    font-weight: 900;
+    color: var(--vert);
+    position: absolute; /* Le texte sort du flux et se place sur l'image */
+    text-align: right;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6); /* Pour lisibilité */
+    z-index: 10;
+    top: 140px;
+    right: 20px;
+    left: auto;
+    transform: none;
+}
+
+.nom_du_festival {
+    font-family: var(--nom-festival);
+    font-size: var(--nom-festival-t);
+    color: var(--noir);
+    position: absolute; /* Le texte sort du flux et se place sur l'image */
+    text-align: left;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6); /* Pour lisibilité */
+    z-index: 10;
+    bottom: 250px;
+    right: auto;
+    left: 20px;
+    transform: none;
+}
