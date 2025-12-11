@@ -1,6 +1,5 @@
 /* Variable collection */
 :root {
-    /* Mode 1 */
     /* color */
     --beige: #f9e8d1;
     --noir: #1f1d1d;
@@ -10,12 +9,31 @@
     --vert: #4dc95b;
     --violet: #b151ff;
     --gris: #747474;
-    
+}
 
+/* fnt-size */
+    :root {
+        /* number */
+        --body: 0.875rem;
+        --body-2: 1rem;
+        --semi-text: 1rem;
+        --nom-festival: 1.25rem;
+        --slogan: 2rem;
+        --text-med: 2rem;
+        --text-big: 3rem;
+    }
 
-/*Variable test*/
---space-2x: 0.5rem; /* 8px */
---space-3x: 1.25rem; /* 20px */
+    /* font-name */
+    :root {
+        /* string */
+        --body: Inter;
+        --body-2: Inter;
+        --header-1: Blaka Hollow;
+        --header-2: Jacques Francois Shadow;
+        --nom-festival: Orbitron;
+        --semi-text: Inter;
+        --slogan: Bebas Neue;
+    }
 
 
 
