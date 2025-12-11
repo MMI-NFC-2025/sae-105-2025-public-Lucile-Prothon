@@ -8,5 +8,5 @@ toggle.addEventListener('click', () => {
     toggle.setAttribute("aria-expanded", !isOpen);
     nav.setAttribute("aria-hidden", isOpen);
 
-    document.body.classList.toggle("noscroll", !isOpen);
+    document.body.classList.toggle('noscroll', !isOpen)
 });

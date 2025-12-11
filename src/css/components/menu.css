@@ -2,7 +2,9 @@
 .menu {
     position: fixed;
     top: 58px;
-    right: 0;
+    right: 356px;
+    width: 100vw;/* largeur = 100% de la fenêtre */
+    height: 100vh;/* hauteur = 100% de la fenêtre */
     background-color: var(--orange-jaune);
     display: flex;
     flex-direction: column;
