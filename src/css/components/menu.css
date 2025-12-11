@@ -1,33 +1,77 @@
+
 .menu {
-    position: absolute;
-    top: 70px;
+    position: fixed;
+    top: 58px;
     right: 0;
     background-color: var(--orange-jaune);
     display: flex;
     flex-direction: column;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.4s ease;
+    transform: translateY(-10px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
+    z-index: 5;
+    padding: 20px;/* espace intérieur tout autour */
 }
 
+/* Menu ouvert */
 .menu[aria-hidden="false"] {
     opacity: 1;
     visibility: visible;
+    transform: translateY(0);
 }
 
-/* Empêcher le scroll */
+/*Bloquer le scroll*/
 .noscroll {
     overflow: hidden;
 }
 
-/* Bouton menu */
+/* Bouton du menu */
 .menu-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
     position: relative;
     z-index: 3;
-    width: 30px;
-    transition: all 0.4s ease-in-out;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.menu-btn[aria-expanded="true"] {
-    transform: rotate(90deg);
+/* Images du bouton */
+.menu-btn img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Icône menu fermé visible par défaut */
+.menu-btn .menu_fermé {
+    opacity: 1;
+}
+
+/* Quand menu ouvert → afficher icône ouverte */
+.menu-btn[aria-expanded="true"] .menu_fermé {
+    opacity: 0;
+}
+
+.menu-btn[aria-expanded="true"] .menu_ouvert {
+    opacity: 1;
+}
+
+/*Enlever le soulignement*/
+.menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu__item{
+    font-family: var(--header-2);
 }

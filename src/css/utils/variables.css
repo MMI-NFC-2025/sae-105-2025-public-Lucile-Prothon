@@ -26,19 +26,12 @@
     /* font-name */
     :root {
         /* string */
-        --body: Inter;
-        --body-2: Inter;
-        --header-1: Blaka Hollow;
-        --header-2: Jacques Francois Shadow;
-        --nom-festival: Orbitron;
-        --semi-text: Inter;
-        --slogan: Bebas Neue;
+        --body: 'Inter';
+        --body-2: 'Inter';
+        --header-1: 'Blaka Hollow';
+        --header-2: 'Jacques Francois Shadow';
+        --nom-festival: 'Orbitron';
+        --semi-text: 'Inter';
+        --slogan: 'Bebas Neue';
     }
 
-
-
-
-
-
-
-}
