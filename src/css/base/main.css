@@ -54,7 +54,7 @@ h2 {
 
 .bouton_texte {
     font-family: var(--body-2);
-    font-size: var(--body);
+    font-size: var(--body-t);
 }
 
 .plus_info {
@@ -78,6 +78,13 @@ h2 {
     color: var(--violet);
     margin: 0 0 40px 0;
     margin-top: 40px;
+}
+
+.text_gras{
+    font-family: var(--body-2);
+    font-size: var(--semi-text-t);
+    font-weight: 900;
+    
 }
 
 /*Présentation équipe*/ 
@@ -125,7 +132,7 @@ h2 {
     font-weight: 600;
     margin: 0;
     bottom: 5px;
-    margin-left: -190px;
+    margin-left: -450px;
 }
 
 
