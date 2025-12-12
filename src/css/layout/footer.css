@@ -3,6 +3,8 @@
     background-size: cover;
     padding: 5px 0px;
     color: var(--noir);
+    flex-shrink: 0;
+    width: 100;
 }
 
 .footer_ensemble {
@@ -19,7 +21,6 @@
 .footer_rs{
     font-family: var(--sm-uppercase);
     padding-right: 30px;
-    bottom: 0px;
 }
 
 .footer_rs img {
@@ -31,4 +32,23 @@ margin-left: 10px;
     text-decoration: none;
     color: inherit;
 }
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto; /* pousse le footer en bas */
+    padding: 60px 20px 40px;/* un peu d’air en haut et en bas */
+    text-align: center;
+}
+
 
