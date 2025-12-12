@@ -1,37 +1,65 @@
 *,
 *::before,
 *::after {
-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-background-color: var(--beige);
-min-height: 100vh;
-display: flex;
-flex-direction: column;
+    background-color: var(--beige);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .main {
-flex: 1;/* pousse le footer vers le bas si contenu trop petit */
-padding: 0 20px;
+    flex: 1;/* pousse le footer vers le bas si contenu trop petit */
+    padding: 0 20px;
 }
 
 
 .slogan{
-font-family: var(--slogan);
-font-size: var(--slogan-t);
-color : var(--violet);
+    font-family: var(--slogan);
+    font-size: var(--slogan-t);
+    color : var(--violet);
 }
 
 .titre{
-font-family: var(--header-1);
-font-size: var(--text-big) ;
-font-weight: 600;
+    font-family: var(--header-1);
+    font-size: var(--text-big) ;
+    font-weight: 600;
+}
+
+.btn_orange{
+    font-family: var(--body);
+    font-size: var(--semi-text);
+    padding: 16px 36px; /* Hauteur et largeur du bouton */
+    border: none;
+    border-radius: 8px; /* Légers coins arrondis*/
+    cursor: pointer;
+    position: relative; /* Positionner l'image par rapport au bouton */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .billetterie{
-font-family: var(--body);
-font-size: var(--semi-text) ;
+    position: relative; 
+    display: inline-block; /* Pour que le conteneur s'adapte à la taille du bouton */
+    height: auto;
+    padding-left: 80px;
+    margin-top: 50px; /* espace avec le texte du haut */
+    margin-bottom: 70px;
+}
+
+.billetterie img {
+    position: absolute;
+    left: -10px; /* Effectue le décalage à gauche*/
+    top: 50%; /* Centre verticalement */
+    transform: translateY(-50%); /* Meilleur centrage */
+    width: 130px;
+    height: auto;
+    pointer-events: none;
+    z-index: 10;
 }
 
 .news /*Créer les blocs*/
@@ -42,20 +70,27 @@ font-size: var(--semi-text) ;
 
 }
 
+.btn_orange {
+    background-color: var(--orange);
+    color: var(--noir);
+    padding: 20px;
+    width: 100%;
+}
+
 .bouton_texte{
-font-family: var(--body-2);
-font-size: var(--body);
+    font-family: var(--body-2);
+    font-size: var(--body);
 }
 
 .plus_info{
-font-family: var(--body-2);
-font-size: var(--body-2-t);
-font-weight: 600;
+    font-family: var(--body-2);
+    font-size: var(--body-2-t);
+    font-weight: 600;
 }
 
 .sous_titre{
-font-family: var(--header-2);
-font-size: var(--gros);
+    font-family: var(--header-2);
+    font-size: var(--gros);
 }
 
 
@@ -76,4 +111,3 @@ textarea {
     padding: 0;
     cursor: pointer;
 }
-
