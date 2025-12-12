@@ -45,6 +45,12 @@ h2 {
     box-shadow: inset;
 }
 
+.slogan_vert{
+    font-family: var(--slogan);
+        font-size: var(--slogan-t);
+        color: var(--vert);
+        box-shadow: inset;
+}
 
 .bouton_texte {
     font-family: var(--body-2);
@@ -55,6 +61,61 @@ h2 {
     font-family: var(--body-2);
     font-size: var(--body-2-t);
     font-weight: 600;
+}
+
+.texte_violet {
+    font-family: var(--semi-text);
+    font-size: var(--semi-text-t);
+    color: var(--violet);
+    font-weight: 600;
+    margin: 0 0 16px 0;
+    line-height: 1.2;
+}
+
+.team {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.team-member {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.team-photo {
+    width: 170px;
+    height: 160px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 12px;
+}
+
+.team-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team-desc {
+    font-family: var(--body);
+    font-size: var(--body-t);
+    color: var(--noir);
+    margin: 0 0 24px 0;
+    line-height: 1.6;
+}
+
+.team-name {
+    font-family: var(--body);
+    font-size: var(--semi-text);
+    color: var(--noir);
+    font-weight: 600;
+    margin: 0;
+    bottom: 5px;
+    margin-left: -190px;
 }
 
 
