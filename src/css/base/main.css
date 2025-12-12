@@ -6,6 +6,7 @@
 
 body {
     background-color: var(--beige);
+    font-family: var(--body);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -16,18 +17,48 @@ body {
     padding: 0 20px;
 }
 
+/*Textes*/ 
 
-.slogan{
+
+h1 {
+    font-family: var(--header-1);
+    font-size: var(--tres-gros) ;
+    font-weight: 400;
+    display: flex;
+    justify-content: center; /*Centrage horizontal */
+    align-items: center;
+}
+
+h2 {
+    font-family: var(--header-2);
+    font-size: var(--gros);
+    display: flex;
+    justify-content: center; /*Centrage horizontal */
+    align-items: center;
+}
+
+.slogan {
     font-family: var(--slogan);
     font-size: var(--slogan-t);
-    color : var(--violet);
+    color: var(--violet);
+    box-shadow: inset;
 }
 
-.titre{
-    font-family: var(--header-1);
-    font-size: var(--text-big) ;
+
+
+.bouton_texte {
+    font-family: var(--body-2);
+    font-size: var(--body);
+}
+
+.plus_info {
+    font-family: var(--body-2);
+    font-size: var(--body-2-t);
     font-weight: 600;
 }
+
+
+/*Création de bloc*/
 
 .btn_orange{
     font-family: var(--body);
@@ -77,28 +108,16 @@ body {
     width: 100%;
 }
 
-.bouton_texte{
-    font-family: var(--body-2);
-    font-size: var(--body);
-}
-
-.plus_info{
-    font-family: var(--body-2);
-    font-size: var(--body-2-t);
-    font-weight: 600;
-}
-
-.sous_titre{
-    font-family: var(--header-2);
-    font-size: var(--gros);
-}
 
 
+/*Enlever le soulignement*/
 
 .main a {
-    text-decoration: none; /*Enlever le soulignement*/
-    color: inherit; /*Enlever le soulignement*/
+    text-decoration: none; 
+    color: inherit; 
 }
+
+/*Réinitialisation des styles par défaut*/
 
 button,
 input,
@@ -107,7 +126,8 @@ textarea {
     appearance: none;
     border: none;
     background: none;
-    outline: none;
     padding: 0;
     cursor: pointer;
 }
+
+
