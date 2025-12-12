@@ -10,3 +10,12 @@ toggle.addEventListener('click', () => {
 
     document.body.classList.toggle('noscroll', !isOpen)
 });
+
+/*Caroussel*/
+
+const track = document.querySelector('.carousel-track');
+const slides = Array.from(track.children);
+
+slides.forEach(slide => track.appendChild(slide.cloneNode(true))); /*Duplique les logos pour une boucle infinie sans vide*/
+
+// L'animation CSS translateX(-50%) fait le reste → boucle fluide

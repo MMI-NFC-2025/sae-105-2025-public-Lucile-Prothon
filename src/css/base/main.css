@@ -188,4 +188,45 @@ textarea {
     cursor: pointer;
 }
 
+/*Caroussel*/
 
+.carousel {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px 80px;
+    /* fond beige clair */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-track {
+    display: flex;
+    align-items: center;
+    gap: 80px; /* espace entre les logos */
+    animation: scroll 40s linear infinite;/* défilement automatique */
+}
+
+.carousel-track img {
+    height: 90px; /* hauteur uniforme des logos */
+    width: auto;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+/* Animation de défilement continu */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Pause au survol (très agréable pour l'utilisateur) */
+.carousel:hover .carousel-track {
+    animation-play-state: paused;
+}
