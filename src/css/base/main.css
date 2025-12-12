@@ -191,42 +191,46 @@ textarea {
 /*Caroussel*/
 
 .carousel {
+    position: relative;
     max-width: 1200px;
     margin: 60px auto;
-    padding: 40px 80px;
-    /* fond beige clair */
+    padding: 60px 80px 100px 80px;
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .carousel-track {
     display: flex;
     align-items: center;
-    gap: 80px; /* espace entre les logos */
-    animation: scroll 40s linear infinite;/* défilement automatique */
+    gap: 80px;
+    transition: transform 0.6s ease-in-out;
 }
 
 .carousel-track img {
-    height: 90px; /* hauteur uniforme des logos */
+    height: 90px;
     width: auto;
     flex-shrink: 0;
     object-fit: contain;
 }
 
-/* Animation de défilement continu */
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
+/* Flèches en bas au centre, sans fond */
+.carousel-controls {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 50px;
+    z-index: 10;
 }
 
-/* Pause au survol (très agréable pour l'utilisateur) */
-.carousel:hover .carousel-track {
-    animation-play-state: paused;
+.carousel-btn {
+    background: none;
+    border: none;
+    font-size: 50px;
+    color: black;
+    padding: 0;
+}
+
+.carousel-btn:hover {
+    opacity: 0.7;
 }
