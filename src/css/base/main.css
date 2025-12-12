@@ -72,6 +72,16 @@ h2 {
     line-height: 1.2;
 }
 
+.sous_titre_violet{
+    font-family: var(--header-2);
+    font-size: var(--text-med);
+    color: var(--violet);
+    margin: 0 0 40px 0;
+    text-align: left;*
+}
+
+/*Présentation équipe*/ 
+
 .team {
     max-width: 1000px;
     margin: 80px auto;
@@ -119,7 +129,7 @@ h2 {
 }
 
 
-/*Création de bloc*/
+/*Création billetterrire*/
 
 .btn_orange{
     font-family: var(--body);
@@ -154,6 +164,8 @@ h2 {
     height: auto;
     pointer-events: none;
 }
+
+/*Création actualité*/
 
 .news {
     background-color: var(--orange);
@@ -228,6 +240,46 @@ h2 {
     margin-left: 200px;
 }
 
+/*Création scène*/
+
+.scene-block {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.scene-img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+}
+
+.scene-btn {
+    background-color: var(--orange-jaune);
+    color: var(--noir);
+    font-family: var(--body);
+    font-size: var(--body-t);
+    font-weight: bold;
+    padding: 16px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    transition: all 0.3s ease;
+}
+
+.scene-btn:hover {
+    transform: translateY(-3px);
+}
+
+.scene-btn img {
+    width: 32px;
+    height: auto;
+}
 
 /*Enlever le soulignement*/
 
