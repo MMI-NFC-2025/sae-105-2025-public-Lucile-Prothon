@@ -29,6 +29,15 @@ h1 {
     align-items: center;
 }
 
+h2 {
+    font-family: var(--header-2);
+    font-size: var(--gros);
+    display: flex;
+    justify-content: center;
+    /*Centrage horizontal */
+    align-items: center;
+}
+
 .slogan {
     font-family: var(--slogan);
     font-size: var(--slogan-t);
@@ -36,13 +45,6 @@ h1 {
     box-shadow: inset;
 }
 
-h2 {
-    font-family: var(--header-2);
-    font-size: var(--gros);
-    display: flex;
-    justify-content: center; /*Centrage horizontal */
-    align-items: center;
-}
 
 .bouton_texte {
     font-family: var(--body-2);
@@ -92,17 +94,78 @@ h2 {
     pointer-events: none;
 }
 
-
-.news /*Créer les blocs*/
-{
+.news {
+    background-color: var(--orange);
+    padding: 50px 50px 50px 160px; /* padding gauche pour l'image */
+    margin-bottom: 40px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    min-height: 220px;
+    gap: 60px;
 }
 
-.bouton /*Créer la mise en page*/{
-
+.news img {
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 220px;
+    height: auto;
+    pointer-events: none;
 }
 
+.text-content {
+    color: var(--noir); 
+}
 
+.bouton {
+    font-family: var(--body);
+    font-size: var(--semi-text); 
+    font-weight: 900;
+    color: var(--noir);
+    margin: 0 0 12px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    margin-left: 80px;
+}
 
+.bouton_texte {
+    font-family: var(--body);
+    font-size: var(--body-t);
+    color: var(--noir);
+    margin: 0 0 30px 0;
+    line-height: 1.5;
+    max-width: 390px;
+    margin-left: 80px;
+}
+
+.plus_info {
+    font-family: var(--semi-text);
+    font-size: var(--body-2-t);
+    font-weight: 800;
+    background-color: var(--orange-jaune);
+    color: var(--noir);
+    padding: 14px 12px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    white-space: nowrap;
+    margin-left: 80px;
+}
+
+.plus_info img {
+    width: 28px;
+    height: auto;
+    margin-left: 200px;
+}
 
 
 /*Enlever le soulignement*/
