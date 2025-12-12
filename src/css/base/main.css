@@ -77,6 +77,7 @@ h2 {
     font-size: var(--text-med);
     color: var(--violet);
     margin: 0 0 40px 0;
+    margin-top: 40px;
 }
 
 /*Présentation équipe*/ 
@@ -324,7 +325,6 @@ textarea {
     object-fit: contain;
 }
 
-/* Flèches en bas au centre, sans fond */
 .carousel-controls {
     position: absolute;
     bottom: 30px;
@@ -345,4 +345,45 @@ textarea {
 
 .carousel-btn:hover {
     opacity: 0.7;
+}
+
+/*Artistes*/
+
+.voir_artiste{
+    background-color: var(--orange-jaune);
+    color: var(--noir);
+    font-family: var(--body);
+    font-size: var(--body-t);
+    font-weight: bold;
+    padding: 14px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-left: auto;
+    align-self: flex-start;
+}
+
+.artiste-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.voir_artiste:hover {
+    background-color: var(--orange-jaune);
+    transform: translateY(-3px); /* petit soulèvement */
+    box-shadow: 0 10px 20px rgba(255, 140, 0, 0.3);
+}
+
+.voir_artiste:hover::after {
+    left: 100%;
+}
+
+.artiste-card img {
+    width: 100%;
+    max-width: 200px; /* ← change juste ce chiffre pour agrandir/réduire */
+    height: auto;
+    border-radius: 16px;
+    align-self: flex-start;
+    margin-right: auto;
 }
