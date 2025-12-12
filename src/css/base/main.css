@@ -29,14 +29,6 @@ h1 {
     align-items: center;
 }
 
-h2 {
-    font-family: var(--header-2);
-    font-size: var(--gros);
-    display: flex;
-    justify-content: center; /*Centrage horizontal */
-    align-items: center;
-}
-
 .slogan {
     font-family: var(--slogan);
     font-size: var(--slogan-t);
@@ -44,7 +36,13 @@ h2 {
     box-shadow: inset;
 }
 
-
+h2 {
+    font-family: var(--header-2);
+    font-size: var(--gros);
+    display: flex;
+    justify-content: center; /*Centrage horizontal */
+    align-items: center;
+}
 
 .bouton_texte {
     font-family: var(--body-2);
@@ -63,6 +61,8 @@ h2 {
 .btn_orange{
     font-family: var(--body);
     font-size: var(--semi-text);
+    background-color: var(--orange);
+    color: var(--noir);
     padding: 16px 36px; /* Hauteur et largeur du bouton */
     border: none;
     border-radius: 8px; /* Légers coins arrondis*/
@@ -90,8 +90,8 @@ h2 {
     width: 130px;
     height: auto;
     pointer-events: none;
-    z-index: 10;
 }
+
 
 .news /*Créer les blocs*/
 {
@@ -101,12 +101,7 @@ h2 {
 
 }
 
-.btn_orange {
-    background-color: var(--orange);
-    color: var(--noir);
-    padding: 20px;
-    width: 100%;
-}
+
 
 
 
