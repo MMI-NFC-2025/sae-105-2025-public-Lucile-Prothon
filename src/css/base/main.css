@@ -538,3 +538,143 @@ textarea {
     width: 16px;
     height: auto;
 }
+
+/*Contact*/
+.envoi {
+background-color: var(--orange);
+    color: var(--noir);
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    float: right;
+    transition: all 0.3s ease;
+    margin-bottom: 60px;
+    margin-top: -60px;
+}
+
+
+.adresse {
+    background-color: var(--orange);
+    color: var(--noir);
+    padding: 24px;
+    border-radius: 16px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    clear: both;
+    margin-bottom: 40px;
+}
+
+.contact-section {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.formulaire-contact {
+    padding: 40px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.champ {
+    margin-bottom: 24px;
+}
+
+.champ label {
+    display: block;
+    font-weight: bold;
+    color: var(--noir);
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.champ input,
+.champ textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid var(--orange-jaune);
+    border-radius: 12px;
+    font-family: var(--body);
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/*Recherche*/
+
+/* Page recherche complète */
+.page-recherche {
+    background-color: var(--orange-jaune);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header noir en haut */
+.header-recherche {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #fffcfc;
+    z-index: 10;
+}
+
+.header-recherche .logo img {
+    height: 50px;
+}
+
+.header-recherche .menu-btn img {
+    height: 32px;
+}
+
+/* Barre de recherche grande et centrée */
+.recherche-main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    background-color: var(--gris);
+    border-radius: 50px;
+    width: 100%;
+    max-width: 650px;
+    padding: 12px 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.search-form input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-family: var(--body);
+    font-size: 1.5rem;
+    color: #f9f9f9;
+    outline: none;
+}
+
+.search-form input::placeholder {
+    color: #ffffff;
+}
+
+.search-form button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.search-form button img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.7;
+}
