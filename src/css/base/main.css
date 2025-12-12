@@ -80,6 +80,21 @@ h2 {
     margin-top: 40px;
 }
 
+.sous_titre_vert{
+    font-family: var(--header-2);
+    font-size: var(--text-med);
+    color: var(--vert);
+    margin: 0 0 40px 0;
+    margin-top: 40px;
+}
+
+.sous_sous_titre_gras{
+    font-family: var(--body-2);
+    font-size: var(--semi-text-t);
+    font-weight: 900;
+
+}
+
 .text_gras{
     font-family: var(--body-2);
     font-size: var(--semi-text-t);
@@ -388,9 +403,88 @@ textarea {
 
 .artiste-card img {
     width: 100%;
-    max-width: 200px; /* ← change juste ce chiffre pour agrandir/réduire */
+    max-width: 200px;
     height: auto;
     border-radius: 16px;
     align-self: flex-start;
     margin-right: auto;
+}
+
+/*Scène sud*/
+
+.voir_scene {
+    background-color: var(--orange-jaune);
+    color: var(--noir);
+    font-family: var(--body);
+    font-size: var(--body-t);
+    font-weight: bold;
+    padding: 14px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-left: auto;
+    align-self: flex-start;
+}
+
+.scene_sud_card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.voir_scene:hover {
+    background-color: var(--orange-jaune);
+    transform: translateY(-3px);
+    /* petit soulèvement */
+    box-shadow: 0 10px 20px rgba(255, 140, 0, 0.3);
+}
+
+.voir_scene:hover::after {
+    left: 100%;
+}
+
+.scene_sud-card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 16px;
+    align-self: center;
+    margin-left: 0;
+
+}
+
+/*Lieber*/
+
+.membre img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    margin-top: 30px;
+}
+
+.gallerie {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* deux colonnes égales */
+    gap: 20px; /* espace entre les photos */
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.gallerie img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.info{
+    background-color: var(--orange);
+    color: var(--noir);
+    padding: 16px 24px;
+    border-radius: 16px;
+    font-family: var(--body);
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    box-shadow: 0 4px 15px rgba(255, 140, 0, 0.2);
 }
